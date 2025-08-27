@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>André Costa - Portfólio</title>
+  <meta name="description" content="André Costa: inspirado pela tradição, movido pela arte. Explore meu portfólio de tatuagens e fale comigo no WhatsApp." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Primary favicon (logo.png) with fallback to favicon.ico -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+  <link rel="icon" href="assets/favicon.ico" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Ir para início">
+        <img class="brand-logo" src="assets/images/logo.jpg" alt="Logo André Costa" onerror="this.onerror=null;this.src='assets/images/logo.png'" />
+        <span class="brand-name">André Costa</span>
+      </a>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#especialidades">Especialidades</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="http://wa.me/+5567999444131" target="_blank" rel="noopener" class="btn btn-sm btn-accent" data-whatsapp>Whatsapp</a>
+      </nav>
+      <button id="mobileMenuBtn" class="hamburger" aria-label="Abrir menu">☰</button>
+    </div>
+    <div id="mobileMenu" class="mobile-menu" hidden>
+      <a href="#inicio">Início</a>
+      <a href="#especialidades">Especialidades</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="http://wa.me/+5567999444131" target="_blank" rel="noopener" class="btn btn-sm btn-accent" data-whatsapp>Whatsapp</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="inicio" class="hero" data-reveal>
+    <div class="container hero-inner">
+      <div class="hero-copy" data-reveal="left">
+        <h1><span class="text-primary">André Costa</span>: Seja muito bem vindo, inspirado pela tradição, movido pela arte. Explore meu portfólio!!</h1>
+        <p class="muted">Tatuador desde 2021. Paixão pelo old school tradicional, trabalhos meticulosos e autênticos.</p>
+        <div class="hero-cta">
+          <a id="whatsappButton" href="whatsapp://send?phone=+5567999444131" class="btn btn-accent btn-lg" data-whatsapp>Entre em contato</a>
+          <a href="#projetos" class="btn btn-ghost btn-lg">Ver projetos</a>
+        </div>
+        <div class="trust">
+          <div>✦ Old school tradicional</div>
+          <div>✦ Traço firme</div>
+          <div>✦ Cores vibrantes</div>
+          <div>✦ Autenticidade</div>
+        </div>
+      </div>
+      <div class="hero-art" data-reveal>
+        <div class="hero-card">
+          <img src="assets/images/Andre.jpg" alt="Tatuagens por André Costa" onerror="this.src='https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=1200&auto=format&fit=crop'"/>
+          <span class="badge">Portfólio</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Especialidades -->
+  <section id="especialidades" class="container specialties" data-reveal="left">
+    <h2>Especialidades</h2>
+    <div class="reviews-grid" data-reveal data-stagger>
+      <figure class="review"><blockquote>Old school tradicional</blockquote><figcaption>Traço forte, sombras sólidas, ícones clássicos.</figcaption></figure>
+      <figure class="review"><blockquote>Flash autoral</blockquote><figcaption>Desenhos próprios com identidade única.</figcaption></figure>
+      <figure class="review"><blockquote>Preto e cor</blockquote><figcaption>Paletas vibrantes e contraste marcante.</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- Banner -->
+  <section class="banner" data-reveal>
+    <div class="container banner-inner">
+      <h2>Tradição em cada traço</h2>
+      <p>Arte autoral e respeito às raízes do old school tradicional. Conheça meu trabalho.</p>
+      <a href="#projetos" class="btn btn-light">Ver portfólio</a>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="faq container" data-reveal="left">
+    <h2>MUITO PRAZER, Vamos nos conhecer melhor.</h2>
+    <p>André Costa é um tatuador com experiência desde 2021. Inicialmente, ele explorou uma diversidade de estilos, tatuando amigos próximos.</p>
+    <p>Sua paixão pelo estilo old school tradicional floresceu após visitas a estúdios especializados e experiências pessoais com tatuadores desse gênero.</p>
+    <p>Hoje, André se destaca por sua habilidade em capturar a essência do old school tradicional, oferecendo trabalhos meticulosos e autênticos que refletem sua dedicação e talento na arte da tatuagem.</p>
+  </section>
+
+  <!-- Projetos / Portfólio -->
+  <section id="projetos" data-reveal>
+    <div class="container">
+    <h2>MEU PORTFÓLIO.</h2>
+    <h3 class="portfolio-subtitle" data-reveal>Desenhos disponíveis</h3>
+    <div class="carousel" data-carousel data-reveal>
+      <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+      <div class="carousel-track">
+        <article class="card"><div class="card-media"><img src="assets/images/PJ1.jpg" alt="Desenho disponível 1"></div></article>
+        <article class="card"><div class="card-media"><img src="assets/images/PJ2.jpg" alt="Desenho disponível 2"></div></article>
+        <article class="card"><div class="card-media"><img src="assets/images/PJ3.jpg" alt="Desenho disponível 3"></div></article>
+        <article class="card"><div class="card-media"><img src="assets/images/PJ4.jpg" alt="Desenho disponível 4"></div></article>
+      </div>
+      <button class="carousel-btn next" aria-label="Próximo">›</button>
+      <div class="carousel-dots" aria-label="Indicadores"></div>
+    </div>
+
+    <h3 class="portfolio-subtitle" data-reveal="left">Cicatrizadas</h3>
+    <div class="carousel" data-carousel data-reveal="left">
+      <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+      <div class="carousel-track">
+        <article class="card"><div class="card-media"><img src="assets/images/CZ1.jpg" alt="Tattoo cicatrizada 1"></div></article>
+        <article class="card"><div class="card-media"><img src="assets/images/CZ2.jpg" alt="Tattoo cicatrizada 2"></div></article>
+        <article class="card"><div class="card-media"><img src="assets/images/CZ3.jpg" alt="Tattoo cicatrizada 3"></div></article>
+        <article class="card"><div class="card-media"><img src="assets/images/CZ4.jpg" alt="Tattoo cicatrizada 4"></div></article>
+      </div>
+      <button class="carousel-btn next" aria-label="Próximo">›</button>
+      <div class="carousel-dots" aria-label="Indicadores"></div>
+    </div>
+  </section>
+
+  <!-- Contato CTA -->
+  <section class="banner">
+    <div class="container banner-inner">
+      <h2>FALA COMIGO.</h2>
+      <p>Está pensando na sua próxima tattoo? Vamos conversar sobre ideias, tamanhos e orçamentos.</p>
+      <a href="http://wa.me/+5567999444131" target="_blank" rel="noopener" class="btn btn-accent" data-whatsapp>Chamar no WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" data-reveal="left">
+    <div class="container footer-inner">
+      <div class="col">
+        <div class="brand"><img class="brand-logo" src="assets/images/logo.jpg" alt="Logo André Costa" onerror="this.onerror=null;this.src='assets/images/logo.png'" /><span class="brand-name">André Costa</span></div>
+        <p class="muted">Inspirado pela tradição, movido pela arte.</p>
+      </div>
+      <div class="col">
+        <h4>Seções</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#especialidades">Especialidades</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="http://wa.me/+5567999444131" target="_blank" rel="noopener">WhatsApp: +55 67 99944-4131</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container copyright">
+      <small>© <span id="year"></span> André Costa. Todos os direitos reservados.</small>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <dialog id="lightbox" class="modal">
+    <button class="modal-close" aria-label="Fechar">✕</button>
+    <button id="lightPrev" class="lightbox-nav prev" aria-label="Imagem anterior">‹</button>
+    <button id="lightNext" class="lightbox-nav next" aria-label="Próxima imagem">›</button>
+    <span id="lightboxBadge" class="badge lightbox-badge" aria-hidden="true"></span>
+    <figure class="lightbox-body">
+      <img id="lightboxImg" src="" alt="" />
+      <figcaption id="lightboxCap" class="muted"></figcaption>
+    </figure>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
