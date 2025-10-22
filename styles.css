@@ -47,9 +47,11 @@ h2{color:var(--primary)}
 .nav{display:flex;gap:1rem;align-items:center}
 .nav a{color:var(--text);text-decoration:none;padding:.5rem .6rem;border-radius:8px}
 .nav a:hover{background:rgba(0,0,0,.04);color:var(--primary)}
-.hamburger{display:none;background:transparent;border:0;color:var(--text);font-size:1.4rem}
-.mobile-menu{display:none;flex-direction:column;padding:.6rem .6rem .9rem;background:#fff;border-bottom:1px solid var(--border)}
-.mobile-menu a{color:var(--text);text-decoration:none;padding:.7rem;border-radius:10px}
+.hamburger{display:none;background:transparent;border:0;color:var(--text);font-size:1.8rem;cursor:pointer;padding:0.5rem;border-radius:50%;width:44px;height:44px;display:flex;align-items:center;justify-content:center;transition:all 0.3s ease}
+.hamburger:hover{background:rgba(255,255,255,0.1)}
+.mobile-menu{display:none;flex-direction:column;padding:2rem 1.5rem;background:rgba(26, 26, 26, 0.98);border:1px solid var(--border);border-radius:12px;position:fixed;top:80px;left:50%;transform:translateX(-50%);width:90%;max-width:400px;z-index:1000;backdrop-filter:blur(10px)}
+.mobile-menu a{color:var(--text);text-decoration:none;padding:1rem;border-radius:8px;margin:0.3rem 0;transition:all 0.3s ease;border:1px solid transparent}
+.mobile-menu a:hover{background:rgba(255,255,255,0.1);border-color:var(--border)}
 
 /* Hero */
 .hero{padding:3rem 0 2rem;border-bottom:1px solid var(--border);background:radial-gradient(900px 500px at 10% 0%,rgba(210,44,44,.10),transparent 60%)}
@@ -157,13 +159,13 @@ h2{color:var(--primary)}
 .newsletter-form input{background:var(--surface);color:var(--text);border:1px solid var(--border);border-radius:12px;padding:.8rem 1rem;min-width:260px}
 
 /* Footer */
-.site-footer{border-top:1px solid var(--border);background:#fff}
-.footer-inner{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1rem;padding:2rem 0}
+.site-footer{border-top:1px solid var(--border);background:#111;padding:4rem 0 0;margin-top:4rem}
+.footer-inner{display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;padding:2rem 0;color:var(--muted)}
 .footer-inner h4{margin:.1rem 0 .6rem}
 .footer-inner ul{list-style:none;padding:0;margin:0}
 .footer-inner a{color:var(--text);text-decoration:none}
 .footer-inner a:hover{text-decoration:underline}
-.copyright{padding:1rem 0;border-top:1px solid var(--border);color:#6b7280;text-align:center}
+.copyright{text-align:center;padding:1.5rem 0;margin-top:3rem;border-top:1px solid var(--border);color:var(--muted);background:rgba(0,0,0,0.3)}
 
 /* Modal */
 .modal{border:0;padding:0;background:transparent}
