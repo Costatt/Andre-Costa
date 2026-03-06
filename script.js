@@ -150,6 +150,57 @@ $$('[data-whatsapp]').forEach((btn) => {
   });
 });
 
+// WhatsApp Float and Popup
+const whatsappFloat = $('#whatsapp-float');
+const whatsappPopup = $('#whatsapp-popup');
+const closePopup = $('#close-popup');
+const sendBtn = $('#send-btn');
+const messageInput = $('#message-input');
+
+if (whatsappFloat && whatsappPopup) {
+  whatsappFloat.addEventListener('click', () => {
+    console.log('Botão flutuante clicado');
+    whatsappPopup.style.display = whatsappPopup.style.display === 'block' ? 'none' : 'block';
+    console.log('Popup exibido:', whatsappPopup.style.display);
+  });
+
+  closePopup.addEventListener('click', () => {
+    console.log('Botão fechar clicado');
+    whatsappPopup.style.display = 'none';
+  });
+
+  sendBtn.addEventListener('click', () => {
+    const message = messageInput.value.trim();
+    console.log('Botão enviar clicado, mensagem:', message);
+    if (message) {
+      const encodedMessage = encodeURIComponent(message);
+      const isDesktop = !/Mobi|Android/i.test(navigator.userAgent);
+      console.log('É desktop:', isDesktop);
+      if (isDesktop) {
+        window.open(`https://wa.me/5567999444131?text=${encodedMessage}`, '_blank');
+        console.log('Abrindo WhatsApp Web');
+      } else {
+        window.location.href = `whatsapp://send?phone=+5567999444131&text=${encodedMessage}`;
+        console.log('Redirecionando para app WhatsApp');
+      }
+      whatsappPopup.style.display = 'none';
+      messageInput.value = '';
+    } else {
+      console.log('Mensagem vazia, nada enviado');
+    }
+  });
+
+  // Close popup when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!whatsappPopup.contains(e.target) && !whatsappFloat.contains(e.target)) {
+      console.log('Clicou fora, fechando popup');
+      whatsappPopup.style.display = 'none';
+    }
+  });
+} else {
+  console.log('Elementos WhatsApp não encontrados:', whatsappFloat, whatsappPopup);
+}
+
 // Footer year
 const yearEl = $('#year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
