@@ -246,11 +246,11 @@ h2{color:#9db4c0;font-weight:700;letter-spacing:-0.5px}
 }
 .whatsapp-tooltip {
   position: absolute;
-  bottom: 70px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--surface);
-  color: var(--text);
+  bottom: 20px;
+  left: 100%;
+  transform: translateX(10px);
+  background: linear-gradient(135deg, rgba(0,0,0,0.9), rgba(50,50,50,0.9));
+  color: #FFD700;
   padding: 8px 12px;
   border-radius: 8px;
   font-size: 14px;
@@ -326,6 +326,6 @@ h2{color:#9db4c0;font-weight:700;letter-spacing:-0.5px}
   .whatsapp-tooltip {
     font-size: 12px;
     padding: 6px 10px;
-    bottom: 65px;
+    bottom: 20px;
   }
 }
