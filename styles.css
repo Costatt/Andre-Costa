@@ -262,11 +262,6 @@ h2{color:#9db4c0;font-weight:700;letter-spacing:-0.5px}
   transition: all 0.3s ease;
   pointer-events: none;
 }
-.whatsapp-float:hover .whatsapp-tooltip {
-  opacity: 1;
-  visibility: visible;
-  bottom: 75px;
-}
 
 /* WhatsApp Popup */
 .whatsapp-popup {
@@ -332,8 +327,5 @@ h2{color:#9db4c0;font-weight:700;letter-spacing:-0.5px}
     font-size: 12px;
     padding: 6px 10px;
     bottom: 65px;
-  }
-  .whatsapp-float:hover .whatsapp-tooltip {
-    bottom: 70px;
   }
 }
