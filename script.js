@@ -208,7 +208,6 @@ if (whatsappFloat && whatsappPopup) {
       tooltipVisible = true;
       whatsappTooltip.style.opacity = '1';
       whatsappTooltip.style.visibility = 'visible';
-      whatsappTooltip.style.bottom = '75px';
     }, 1000); // Show after 1 second
     
     // Then start the 5-second cycle
@@ -217,11 +216,9 @@ if (whatsappFloat && whatsappPopup) {
       if (tooltipVisible) {
         whatsappTooltip.style.opacity = '1';
         whatsappTooltip.style.visibility = 'visible';
-        whatsappTooltip.style.bottom = '75px';
       } else {
         whatsappTooltip.style.opacity = '0';
         whatsappTooltip.style.visibility = 'hidden';
-        whatsappTooltip.style.bottom = '70px';
       }
     }, 5000); // 5 seconds interval
   }
