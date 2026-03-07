@@ -197,6 +197,34 @@ if (whatsappFloat && whatsappPopup) {
       whatsappPopup.style.display = 'none';
     }
   });
+
+  // Auto-show/hide tooltip every 5 seconds
+  const whatsappTooltip = whatsappFloat ? whatsappFloat.querySelector('.whatsapp-tooltip') : null;
+  if (whatsappTooltip) {
+    let tooltipVisible = false;
+    
+    // Show tooltip immediately on page load
+    setTimeout(() => {
+      tooltipVisible = true;
+      whatsappTooltip.style.opacity = '1';
+      whatsappTooltip.style.visibility = 'visible';
+      whatsappTooltip.style.bottom = '75px';
+    }, 1000); // Show after 1 second
+    
+    // Then start the 5-second cycle
+    setInterval(() => {
+      tooltipVisible = !tooltipVisible;
+      if (tooltipVisible) {
+        whatsappTooltip.style.opacity = '1';
+        whatsappTooltip.style.visibility = 'visible';
+        whatsappTooltip.style.bottom = '75px';
+      } else {
+        whatsappTooltip.style.opacity = '0';
+        whatsappTooltip.style.visibility = 'hidden';
+        whatsappTooltip.style.bottom = '70px';
+      }
+    }, 5000); // 5 seconds interval
+  }
 } else {
   console.log('Elementos WhatsApp não encontrados:', whatsappFloat, whatsappPopup);
 }
